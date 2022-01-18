@@ -3,7 +3,35 @@
 
 ## Base API Url
 http://140.122.184.163:5000/
-
+### Documentation
+#### Summary api
+#### 🔗Route ```/summary/run```
+#### ♟Action ```POST```
+##### Request
+```javascript
+{
+    "document"   : "按其在空氣中發生的部位，大概可分為雲中、雲間或雲地之間三大種類放電。雲中放電佔閃電的絕大多數，雲地之間放電者則是對人類的生產和生活產生影響的主要形式。",
+    "topk": 3
+}
+```
+##### Response
+```javascript
+{
+    "data": {
+        "summary": [
+            {
+                "score": 0.77504157320882,
+                "sentence": "按其在空氣中發生的部位，大概可分為雲中、雲間或雲地之間三大種類放電。"
+            },
+            {
+                "score": 0.77504157320882,
+                "sentence": "雲中放電佔閃電的絕大多數，雲地之間放電者則是對人類的生產和生活產生影響的主要形式。"
+            }
+        ]
+    },
+    "message": "Summarize successfully."
+}
+```
 ## Installation
 ```bash
 # Step 1 使用 git 下載專案
