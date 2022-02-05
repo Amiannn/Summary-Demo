@@ -1,8 +1,6 @@
 # Summary-Demo
 簡易中文摘要系統API(使用TF-IDF)
 
-## Base API Url
-http://140.122.184.163:5000/
 ### Documentation
 #### Summary api
 #### 🔗Route ```/summary/run```
